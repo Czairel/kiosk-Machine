@@ -1,0 +1,135 @@
+.parentcon{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #BF6D1B;
+    width: 250px;
+    height: 450px;
+    border: 3px solid black;
+    padding: 50px;
+    margin: 20px;
+    
+}
+
+.cart{
+    position: relative;
+}
+.icon{
+    position:absolute;
+    bottom: 0%;
+    left: 250px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.pic{
+    width: 80px;
+    height: 105px;
+    object-fit: contain;
+}
+.name{
+    margin: 0;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+.text{
+    display: none;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+.p1:hover .text, .p2:hover .text, .p3:hover .text, .p4:hover .text,
+.p5:hover .text, .p6:hover .text, .p7:hover .text, .p8:hover .text,
+.p9:hover .text, .p10:hover .text, .p11:hover .text, .p12:hover .text{
+    display: block;
+}
+.item{
+    background-color: white ;
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .p13, .p14, .p15{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 80px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    color: inherit;
+    text-decoration: none;
+}
+.p1{
+    top: 20px;
+    left: 7px;
+}
+.p2{
+    top: 20px;
+    left: 105px;
+}
+.p3{
+    top: 20px;
+    left: 200px
+}
+.p5{
+    top: 180px;
+    left: 105px;
+}
+.p6{
+    top: 180px;
+    left: 200px
+}
+.p7{
+    top: 340px;
+    left: 7px;
+}
+.p8{
+    top: 340px;
+    left: 105px;
+}
+.p9{
+    top: 340px;
+    left: 200px
+}
+.p10{
+    top: 500px;
+    left: 7px;
+}
+.p11{
+    top: 180px;
+    left: 7px;
+}
+.p12{
+    top: 500px;
+    left: 200px
+}
+
+
+
