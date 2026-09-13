@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk Machine</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <section id="home" class="screen">
+
+    <div>
+        <div class="container">
+        <div class="buttonContainer">
+            <img src="Logo.png" alt="Logo" class="logo">
+            <button class="b1" id="order" >Order Now</button>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="menu" class="screen">
+    
+    <div>
+        <div class="container">
+
+        <div class="item">
+            <div class="pb1">
+                <img class="pic" src="Matcha.png" alt="Matcha drink">
+                <p class="name">Matcha</p>
+                <span class="text">$10</span>
+            </div>
+
+            <div class="pb2">
+                <img class="pic" src="Taro.png" alt="Taro drink">
+                <p class="name">Taro</p>
+                <span class="text">$10</span>
+            </div>
+
+            <div class="pb3">
+                <img class="pic" src="Okinawa.png" alt="Okinawa drink">
+                <p class="name">Okinawa</p>
+                <span class="text">$10</span>
+            </div>
+
+            <div class="pb4">
+                <img class="pic" src="Strawberry.png" alt="Strawberry drink">
+                <p class="name">Strawberry</p>
+                <span class="text">$10</span>
+            </div>
+
+            <div class="pb5">
+                <img class="pic" src="Chocolate.png" alt="Chocolate drink">
+                <p class="name">Chocolate</p>
+                <span class="text">$10</span>
+            </div>
+
+            <div class="pb6">
+                <img class="pic" src="Cheesecake.png" alt="Cheesecake drink">
+                <p class="name">Cheesecake</p>
+                <span class="text">$10</span>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+
+    <section id="cart" class="screen">
+
+    <div class="parentcon">
+        <div class="container">
+        <div class="buttonContainer">
+            <div class="crt"></div>
+        <div class="p1a">
+                <img class="productpic" src="Large.png">
+                <p>Size</p>
+                <span class="text">$10</span>
+        </div>
+        <div class="qt">
+            <input type="number" class="qty" id="qtid" min="1">
+            <button class="submitA" type="button">Submit</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </section>
+
+    <section id="payment" class="screen" style="display:none;">
+        <div class="parentcon">
+            <div class="container">
+                <div class="paybtn">
+                    <span>Payment Option</span>
+                    <button class="pbtnA" type="button">Cash</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="complete" class="screen" style="display:none;">
+        <div class="parentcon">
+            <div class="container">
+                <div class="buttonContainer">
+                    <div class="pay"></div>
+                    <div class="label">
+                        <p>Complete the Payment Below</p>
+                        <p>Dine</p>
+                        <p>Total Payment:</p>
+                    </div>
+                    <div class="dn">
+                        <input type="text" class="dnt" id="dnid" value="$0.00" readonly>
+                        <button class="submitB" type="button">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thankyou" class="screen">
+        <div class="parentcon">
+            <div class="container">
+                <div class="buttonContainer thanksBox">
+                    <p class="message">Thank you, wait for your order.</p>
+                    <button class="home" type="button">Home</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

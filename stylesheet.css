@@ -1,0 +1,306 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#home {
+    display: block;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    background-color: #BF6D1B;
+    width: 250px;
+    height: 450px;
+    border: 3px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+.logo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.buttonContainer{
+    position: relative;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    gap: 20px;
+}
+.b1
+{
+    left: 85px;
+    bottom: 100px;
+    padding: 17px 15px;
+
+}
+
+
+.b1{
+    position: absolute;
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+
+/* Menu Design */
+.cart{
+    position: relative;
+}
+.icon{
+    position:absolute;
+    bottom: 0%;
+    left: 250px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.pic{
+    width: 80px;
+    height: 105px;
+    object-fit: contain;
+}
+.name{
+    margin: 0;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+.text{
+    display: none;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+.pb1:hover .text, .pb2:hover .text, .pb3:hover .text, .pb4:hover .text,
+.pb5:hover .text, .pb6:hover .text{
+    display: block;
+}
+.item{
+    background-color: white ;
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.pb1, .pb2, .pb3, .pb4, .pb5, .pb6{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 80px;
+    height: 140px;
+    border: 2px solid rgb(73, 72, 72);
+    border-radius: 5px;
+    padding: 1px;
+    color: inherit;
+    text-decoration: none;
+}
+.pb1{
+    top: 20px;
+    left: 7px;
+}
+.pb2{
+    top: 20px;
+    left: 105px;
+}
+.pb3{
+    top: 20px;
+    left: 200px
+}
+.pb4{
+    top: 180px;
+    left: 7px;
+}
+.pb5{
+    top: 180px;
+    left: 105px;
+}
+.pb6{
+    top: 180px;
+    left: 200px
+}
+
+
+/* Cart desing */
+
+#cart .crt{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    height: 300px;
+    width: 250px;
+    border: 3px solid black;
+}
+
+#cart .buttonContainer {
+    position: relative;
+    height: 450px;
+    width: 250px;
+    display: block;
+}
+
+#cart .p1a{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 100px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
+    top: 100px;
+    left: 80px;
+}
+
+#cart .productpic{
+    width: 70px;
+    height: 90px;
+    object-fit: contain;
+    margin: 5px auto 0;
+}
+
+#cart .qt{
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    top: 240px;
+    left: 92px;
+    gap: 5px;
+    width: 80px;
+}
+
+.qty::-webkit-inner-spin-button,
+.qty::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.parentcon{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.paybtn{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.pbtnA,
+.submitB,
+.submitA{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pbtnA{
+    width: 100px;
+    height: 90px;
+}
+
+.pay{
+    background-color: white;
+    position: absolute;
+    top: 120px;
+    height: 200px;
+    width: 250px;
+    border: 3px solid black;
+}
+
+.label{
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    text-align: center;
+}
+
+.label p{
+    margin: 0;
+    margin-top: 1px;
+}
+
+.dn{
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    top: 230px;
+    left: 50%;
+    width: 250px;
+    transform: translateX(-50%);
+    gap: 5px;
+    align-items: center;
+}
+
+.dnt{
+    width: 120px;
+}
+
+.submitB{
+    width: 80px;
+    height: 35px;
+}
+
+.thanksBox{
+    position: relative;
+    height: 450px;
+    width: 250px;
+}
+
+.message{
+    position: absolute;
+    top: 150px;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.home{
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    appearance: none;
+    border-radius: 5px;
+    border: none;
+}
